@@ -67,6 +67,7 @@ button {
   }
   
   a {
+    display: inline-block;
       &.button {
           color: $primary;
           background-color: transparent;
@@ -88,4 +89,11 @@ button {
               color: $solidWhite;
           }
       }
+  }
+
+  // this ensures that image elements obey the dimensions of their parents
+
+  img {
+    max-width: 100%;
+    display: block;
   }

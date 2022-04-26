@@ -1,0 +1,47 @@
+// PRODUCtS PAGE
+
+.productsMainContent {
+    section {
+        padding: 75px 0;
+    }
+    h2 {
+        text-align: center;
+    }
+
+
+    // Flex-PARENT container
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+
+        // flex-CHILD
+        li {
+        // This creates space between the images
+        flex-basis: calc((100% / 3) - 30px);
+
+        // flex-basis controls the dimentions of the flex-CHILD
+        margin: 5px 15px;
+        text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10%;
+        }
+    }
+
+    .popularProduct {
+        font-weight: bold;
+    }
+
+    .discountedPrice {
+        text-decoration: line-through;
+        color: rgba($color: $primary, $alpha: 0.5);
+        span {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba($color: $primary, $alpha: 1.0);
+        }
+    }
+}
+
