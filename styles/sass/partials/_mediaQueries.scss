@@ -1,0 +1,32 @@
+/* @media only screen and (max-width: 480px){ {header
+} .headerimageContainer
+max-width: 100%}; */
+
+@media (max-width: 480px){
+
+    .navBar {
+        padding: 0;
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+
+            .menuIcon {
+                align-self: flex-start;
+            }
+            & > * {
+                margin: 0px;
+                padding: 10px 0px;
+            }
+        }
+        .searchCart button,
+        .searchCart a,
+        .searchCart div {
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        .searchCart .searchIcon {
+            margin-right: 0;
+        }
+    }
+}
